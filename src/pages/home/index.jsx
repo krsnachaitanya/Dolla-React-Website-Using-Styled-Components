@@ -7,6 +7,7 @@ import {
   homeObjTwo,
 } from "../../components/info-section/data";
 import Navbar from "../../components/navbar";
+import Services from "../../components/services";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <HeroSection />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
+      <Services />
       <InfoSection {...homeObjThree} />
     </>
   );
