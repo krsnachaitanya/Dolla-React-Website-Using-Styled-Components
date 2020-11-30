@@ -38,7 +38,16 @@ const InfoSection = ({
               <Heading colorScheme={colorScheme}>{headLine}</Heading>
               <Subtitle colorScheme={colorScheme}>{description}</Subtitle>
               <BtnWrap>
-                <Button dark={dark ? 1 : 0} primary={primary ? 1 : 0} to="home">
+                <Button
+                  dark={dark ? 1 : 0}
+                  primary={primary ? 1 : 0}
+                  to="home"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                >
                   {buttonLabel}
                 </Button>
               </BtnWrap>
