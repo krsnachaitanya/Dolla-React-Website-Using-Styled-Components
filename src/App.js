@@ -1,12 +1,16 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from "./pages/home";
+import SigninPage from "./pages/signin";
 
 function App() {
   return (
     <Router>
-      <HomePage />
+      <Switch>
+        <Route path="/" component={HomePage} exact />
+        <Route path="/signin" component={SigninPage} exact />
+      </Switch>
     </Router>
   );
 }

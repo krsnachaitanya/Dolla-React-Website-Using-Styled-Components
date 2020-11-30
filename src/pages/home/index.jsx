@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/footer";
 import HeroSection from "../../components/hero-section";
 import InfoSection from "../../components/info-section";
 import {
@@ -18,6 +19,7 @@ const HomePage = () => {
       <InfoSection {...homeObjTwo} />
       <Services />
       <InfoSection {...homeObjThree} />
+      <Footer />
     </>
   );
 };
